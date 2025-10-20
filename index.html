@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,70 +11,83 @@
 </head>
 
 <style>
-    body{
+    body {
+        display: flex;
+        flex-direction: column;
         background-color: #380f0d;
         background-position: left;
         background-image: url(Img/Izq.png),
-        url(Img/Der.png);
+            url(Img/Der.png);
         background-position: left top, right top;
-        background-repeat: no-repeat;
+        background-repeat: repeat-y;
     }
 
 
 
-    .index{
+    .index {
         color: wheat;
-        font-family: 'Minecrafter', sans-serif ;
-        padding: 0;
-        margin: 0;
+        font-family: 'Minecrafter', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        word-spacing: 4px;
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        word-spacing: 3px;
+        align-self: center;
+        text-align: left;
+        font-size: large;
+        width: 25%;
     }
-  
 
-
-
+    hr{
+        color: wheat;
+        width: 400px;
+        
+    }
 </style>
 
 <body>
     <div class="titulo">
-    <h1>INICIO</h1>
+        <h1>INICIO</h1>
     </div>
-     <div class="Navegacion">
-          
+    <div class="Navegacion">
+
         <ul style="list-style-type: none;">
             <div class="item1">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="Articulo\article.html">Articulo</a></li>
-            <li><a href="Formulario de contacto\Formulario.html">Formulario</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Articulo\article.html">Articulo</a></li>
+                <li><a href="Formulario de contacto\Formulario.html">Formulario</a></li>
             </div>
         </ul>
-        </div>
+    </div>
+
+
+
+    <div class="index">
+        <h1>LOS PAPUS 3</h1>
+        <p>Bienvenidos al servidor de LOS PAPUS 3  esto es es un servidor de Minecraft inspirado en otros servidores <br> como Karmaland o Tortillaland <br>
+        En esta experiencia se busca la socialización con otros jugadores y <br> pasar un buen rato entre todos <br> <br> NO esta enfocado en terminar el juego o ser el mejor de todos. <br>
+        La experiencia se enriquece gracias a los mod <br> que agregan contendo adicional al juego. <br>
+        Los esperamos para disfrutar todos juntos y  <br> sean bienvenidos.</p>
         
-        
-       
-        <div class="index">
-            <h1>LOS PAPUS 3</h1>
-            
-            <p>Bienvenidos al servidor de Minecraft "Los papus 3 " 
-                Únete a nuestra comunidad y <br>disfruta de una increible experiencia de juego
-            </p>
- 
+        <img src="Img/Image20251013194128.png" alt="icono server">
+        <p>IP server: Lospapus3.mc</p>
+        <p> <a href="https://discord.gg/FuMSAMYyXJ" target="_blank"> Servidor de discord </a></p>
+
+    </div>
+
+    
+
+
+    
 
 
 
 
 
 
-        </div>
 
-
-
-        
-
-
-     
 </body>
+
 </html>
