@@ -1,26 +1,161 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
 
-    <link rel="stylesheet" href="navegacion.css">
-    <link rel="icon" href="Img formlario/Image20251013194128.png" type="image/x-icon">
+  <link rel="stylesheet" href="navegacion.css">
+  <link rel="icon" href="Img formlario/Image20251013194128.png" type="image/x-icon">
+
+  <style>
+    body{
+      display: flex;
+      flex-direction: column;
+      background-color: #210000;
+
+    }
+
+    
+
+    .Elementos {
+      font-family: 'Minecrafter', sans-serif;
+      color: wheat;
+      font-size: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-self: center;
+      justify-content: center;
+
+
+    }
+
+    h2 {
+      font-family: 'Minecrafter', sans-serif;
+      color: wheat;
+      text-align: center;
+
+
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+
+    }
+
+
+    form{
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 12px;
+      border: 2px solid wheat;
+      
+
+    }
+
+    .item-button{
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      
+
+    }
+
+      button{
+        font-family: 'Minecrafter', sans-serif;
+        background-color: wheat;
+        box-shadow: 2px 2px wheat;
+        color: black;
+
+      }
+
+    
+  </style>
 </head>
-<body>
-     <div class="titulo">
-    <h1>FORMULARIO</h1>
-    </div>
-     <div class="Navegacion">
-  <ul style="list-style-type: none;" class="item1">
-    
-    <li><a href="../index.html">Inicio</a></li>  
-    <li><a href="../Articulo/article.html">Artículo</a></li>
-    <li><a href="Formulario.html">Formulario</a></li>
 
-    
-  </ul>
-</div>
+<body>
+  <div class="titulo">
+    <h1>FORMULARIO</h1>
+  </div>
+  <div class="Navegacion">
+    <ul style="list-style-type: none;" class="item1">
+
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="../Articulo/article.html">Articulo</a></li>
+      <li><a href="Formulario.html">Formulario</a></li>
+    </ul>
+  </div>
+  <h2>Interesado en ingresar a nuestro servidor? </h2>
+    <div class="Elementos">
+
+
+      <p>Ingrese los datos a continuacion para acceder!</p>
+
+
+      <div class="formulario">
+        <form action="">
+          <div class="item">
+            <label for="Nombre">Nombre</label>
+            <input type="text" name="Nombre">
+          </div>
+
+          <div class="item">
+            <label for="Apellido">Apellido</label>
+            <input type="text" name="Apellido">
+          </div>
+
+          <div class="item">
+            <label for="Numero">Numero de telefono</label>
+            <input type="tel" name="Numero de telefono ">
+          </div>
+
+          <div class="item">
+            <label for="Genero">Género:</label>
+            <select name="Genero" required>
+              <option value="Opcion">Elija una opcion</option>
+              <option value="Masculino">Masculino</option>
+              <option value="Femenino">Femenino</option>
+              <option value="Otro">Otro</option>
+            </select>
+
+          </div>
+
+          <div class="item">
+            <label for="">Ingrese su gmail </label>
+            <input type="email" name="gmail">
+          </div>
+
+          <div class="item">
+            <label for=""> Mensaje</label>
+            <textarea name="Mensaje" placeholder="Opcional" rows="4"></textarea>
+
+
+          </div>
+
+          <div class="item-button">
+            <button type="submit"> Enviar </button>
+            <button type="reset"> Nuevo</button>
+
+
+          </div>
+      </div>
+      
+
+
+      </form>
+    </div>
+    <div class="color"></div>
+
+
+
+
+
+
 </body>
+
 </html>

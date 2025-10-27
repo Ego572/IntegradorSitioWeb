@@ -1,0 +1,34 @@
+body {
+        display: flex;
+        flex-direction: column;
+        background-color: #380f0d;
+        background-position: left;
+        background-image: url(Img/Izq.png),
+            url(Img/Der.png);
+        background-position: left top, right top;
+        background-repeat: repeat-y;
+    }
+
+
+
+    .index {
+        color: wheat;
+        font-family: 'Minecrafter', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        word-spacing: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        text-align: left;
+        font-size: large;
+        width: 25%;
+    }
+
+    hr{
+        color: wheat;
+        width: 400px;
+        
+    }
