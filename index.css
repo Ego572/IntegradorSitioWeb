@@ -1,7 +1,7 @@
 body {
         display: flex;
         flex-direction: column;
-        background-color: #380f0d;
+        background-color: #210000;
         background-position: left;
         background-image: url(Img/Izq.png),
             url(Img/Der.png);
@@ -24,7 +24,7 @@ body {
         align-self: center;
         text-align: left;
         font-size: large;
-        width: 25%;
+        width: 43%;
     }
 
     hr{
@@ -32,3 +32,14 @@ body {
         width: 400px;
         
     }
+
+
+    .redes {
+        position: absolute;
+        bottom: 10px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    

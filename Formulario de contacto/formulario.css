@@ -1,0 +1,85 @@
+body{
+      display: flex;
+      flex-direction: column;
+      background-color: #210000;
+      background-image: url(Img_formlario/izq.png), url(Img_formlario/der.png);
+      background-repeat: no-repeat;
+      background-position: left top, right top;
+     
+
+    }
+
+    
+
+    .Elementos {
+      font-family: 'Minecrafter', sans-serif;
+      color: wheat;
+      font-size: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-self: center;
+      justify-content: center;
+      word-spacing: 4px;
+      
+
+
+    }
+
+    h2 {
+      font-family: 'Minecrafter', sans-serif;
+      color: wheat;
+      text-align: center;
+      word-spacing: 4px;
+
+
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+
+    }
+
+
+    form{
+     
+      background-color: #7d1e1f;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 12px;
+      border: 2px solid wheat;
+      width: 100%;
+      
+      
+    }
+
+    .item-button{
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 80px;
+      
+
+    }
+
+      button{
+        font-family: 'Minecrafter', sans-serif;
+        background-color: wheat;
+        box-shadow: -2px 2px wheat;
+        color: black;
+
+      }
+
+      label{
+      line-height: 30px;
+      }
+
+      input,textarea,select{
+            border: none;
+            border-bottom: 1px solid wheat;
+            outline: none;
+            background: transparent;
+
+      }
