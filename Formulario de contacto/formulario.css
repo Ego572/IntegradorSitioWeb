@@ -1,5 +1,7 @@
 body{
       display: flex;
+      margin: 0;
+      padding: 0;
       flex-direction: column;
       background-color: #210000;
       background-image: url(Img_formlario/izq.png), url(Img_formlario/der.png);

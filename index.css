@@ -1,4 +1,6 @@
 body {
+    margin: 0;
+    padding: 0;
         display: flex;
         flex-direction: column;
         background-color: #210000;
@@ -6,6 +8,7 @@ body {
         background-image: url(Img/Izq.png),
             url(Img/Der.png);
         background-position: left top, right top;
+        
         background-repeat: repeat-y;
     }
 

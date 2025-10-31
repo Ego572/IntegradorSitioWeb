@@ -1,7 +1,8 @@
   body {
 
             background-color: #210000;
-
+            margin: 0;
+            padding: 0;
             background-image: url(img_articulo/Dereita.png);
             background-repeat: repeat-y;
             background-position: top right;
