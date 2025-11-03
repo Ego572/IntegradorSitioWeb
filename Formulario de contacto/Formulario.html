@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="navegacion.css">
   <link rel="icon" href="Img_formlario/Image20251013194128.png" type="image/x-icon">
   <link rel="stylesheet" href="formulario.css">
+  
+  <script src="formulario.js"></script>
+  
 
 
 </head>
@@ -33,7 +36,7 @@
 
 
 
-    <form action = "" novalidate=""> 
+    <form novalidate="" > 
       <div class="item">
         <label>Nombre</label>
         <input type="text" id="nombre" min="4" max="25">
@@ -46,7 +49,7 @@
 
       <div class="item">
         <label for="Numero" >Numero de telefono</label>
-        <input type="tel" name="Numero de telefono " id="numero" placeholder="ej= +54265712345678">
+        <input type="tel" name="Numero de telefono " id="numero" placeholder="+54265712345678">
       </div>
 
 
@@ -57,10 +60,10 @@
 
       <div class="item">
         <label for="Genero">Género:</label>
-        <select name="Genero" required>
+        <select name="Genero"  id="genero" >
           <option value="Opcion">Elija una opcion</option>
-          <option value="Masculino">Masculino</option>
-          <option value="Femenino">Femenino</option>
+          <option value="Masculino" id="opcion-masculino">Masculino</option>
+          <option value="Femenino" id="opcion-femenino">Femenino</option>
         </select>
 
       </div>
@@ -75,7 +78,7 @@
       </div>
 
       <div class="item-button">
-        <button type="button" onclick="validartodo()"> Enviar </button>
+        <button type="button" onclick="mostrardatos()"> Enviar </button>
         <button type="reset"> Nuevo</button>
 
 
@@ -86,121 +89,20 @@
 
     </form>
   </div>
+   
+  <div id="resultado" class="resultado"></div>
 
 
-  <script>
-
-
-
-    function validartodo() {
-      //validar nombre
-      const nombreInput = document.getElementById("nombre");
-      const valor = nombreInput.value;
-
-      const msjPrevio = document.getElementById("mensaje_error_nombre")
-      if (msjPrevio) msjPrevio.remove();
-
-      const minCaracteres = 4;
-      const maxCaracteres = 25;
-
-      const mensaje = document.createElement("p");
-      mensaje.id = "mensaje_error_nombre";
-
-
-      if (valor.trim() === "") {
-        mensaje.textContent = "Nombre obligatorio";
-        mensaje.style.color = "red"
-
-
-      } else if (valor.length < minCaracteres) {
-        mensaje.textContent = "Nombre muy corto";
-        mensaje.style.color = "red"
-
-      } else if (valor.length > maxCaracteres) {
-        mensaje.textContent = "Nombre muy largo";
-        mensaje.style.color = "red"
-
-
-      } else {
-        mensaje.textContent = "Nombre correcto";
-        mensaje.style.color = "green"
-
-      }
-
-      nombreInput.insertAdjacentElement("afterend", mensaje)
-
-      //validar gmail
-      const gmailInput = document.getElementById("gmail");
-      const valor1 = gmailInput.value;
-
-      const msjPrevio1 = document.getElementById("mensaje_error_gmail")
-      if (msjPrevio1) msjPrevio1.remove();
-
-      const mensaje1 = document.createElement("p");
-      mensaje1.id = "mensaje_error_gmail";
-
-      let regexp1 = new RegExp("@gmail\\.com(\\.ar)?$")
-
-      if (valor1.trim() === "") {
-        mensaje1.textContent = "Gmail obligatorio";
-        mensaje1.style.color = "red"
-
-
-      } else if (regexp1.test(valor1) === false) {
-        mensaje1.textContent = "Falta el gmail, o termina mal";
-        mensaje1.style.color = "red"
-
-      } else {
-        mensaje1.textContent = "Gmail correcto";
-        mensaje1.style.color = "green"
-
-
-      }
-
-      gmailInput.insertAdjacentElement("afterend", mensaje1)
-
-      //validar numero
-      const numeroInput = document.getElementById("numero");
-      const valor2 = numeroInput.value;
-
-      const msjPrevio2 = document.getElementById("mensaje_error_num")
-      if(msjPrevio2) msjPrevio2.remove();
-
-      const mensaje2 = document.createElement("p");
-      mensaje2.id = "mensaje_error_num";
-
-      let regexp2 = new RegExp ("^\\+?\\d{7,15}$")
-
-      if(valor2.trim() === ""){
-        mensaje2.textContent = "Numero de telefono obligatorio";
-        mensaje2.style.color = "red"
-
-
-      } else if (regexp2.test(valor2) === false){
-        mensaje2.textContent = "Falta + o esta mal escrito ";
-        mensaje2.style.color = "red"
-
-      } else{
-         mensaje2.textContent = "Telefono correcto";
-        mensaje2.style.color = "green"
-
-      }
-
-      numeroInput.insertAdjacentElement("afterend", mensaje2)
-
-    }
-
-    function validarnumero() {
-
-
-      
-
-
-    }
+  
 
 
 
-  </script>
+    
+
+
+
+
+  
 
 
 </body>
