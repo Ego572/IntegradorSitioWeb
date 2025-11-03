@@ -36,7 +36,7 @@
 
 
 
-    <form novalidate="" > 
+    <form novalidate name="formulario" onsubmit="return mostrardatos()" > 
       <div class="item">
         <label>Nombre</label>
         <input type="text" id="nombre" min="4" max="25">
@@ -68,8 +68,6 @@
 
       </div>
 
-      
-
       <div class="item">
         <label for=""> Mensaje</label>
         <textarea name="Mensaje" placeholder="Opcional" rows="4"></textarea>
@@ -78,7 +76,7 @@
       </div>
 
       <div class="item-button">
-        <button type="button" onclick="mostrardatos()"> Enviar </button>
+        <button type="submit" onclick="validartodo()"> Enviar </button>
         <button type="reset"> Nuevo</button>
 
 
@@ -91,13 +89,6 @@
   </div>
    
   <div id="resultado" class="resultado"></div>
-
-
-  
-
-
-
-    
 
 
 

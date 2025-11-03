@@ -45,7 +45,7 @@ function validartodo() {
       const mensaje1 = document.createElement("p");
       mensaje1.id = "mensaje_error_gmail";
 
-      let regexp1 = new RegExp("@gmail\\.com(\\.ar)?$")
+      let regexp1 = new RegExp("@gmail\\.(com|edu|god)(\.ar)?$")
 
       if (valor1.trim() === "") {
         mensaje1.textContent = "Gmail obligatorio";
@@ -94,18 +94,18 @@ function validartodo() {
 
       numeroInput.insertAdjacentElement("afterend", mensaje2)
 
-      return true;
+      return false;
 
     }
 
     function mostrardatos(){
-
+        /*
         const Validado = validartodo();
 
         if(!Validado){
             console.log("Formulario no valido")
             return;
-        }else{
+        }else{ */
 
 
       const nombreInput = document.getElementById("nombre");
@@ -156,10 +156,13 @@ function validartodo() {
       const contenedor = document.getElementById("resultado");
       contenedor.innerHTML = ""
       contenedor.append(mensaje1,mensaje3,mensaje2,mensaje4,mensaje5)
+
+      return false;
       }
 
 
 
-    }
+
+    
     
 
